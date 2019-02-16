@@ -1,14 +1,5 @@
 # a6s-cloud
-* Vue.js
-* TypeScript
-
-* Sass
-
-* PHP
-* Laravel
-* Python
-* MySQL
-
+[visit our site !!]()
 
 ## OVERVIEW
 `a6s-cloud` (analysis-cloud)
@@ -17,10 +8,10 @@
 
 ## DESCRIPTION
 
-`a6s-cloud` は a**nalysi**s -cloud を語源としたtwitterにおけるハッシュタグの解析アプリケーションです。  
+`a6s-cloud` は a*nalysi*s-cloud を語源としたtwitterにおけるハッシュタグの解析アプリケーションです。  
 
 任意のハッシュタグを入力することで、そのハッシュタグがつけられているtweetの傾向を分析し、  
-`画像` ・ `グラフ` ・ `ランキング` といった形式により見える化し、`hot` なハッシュタグを探すことを可能とします。
+`画像` ・ `グラフ` ・ `ランキング` といった形式により可視化し、`hot` なハッシュタグを探すことを可能とします。
 
 `a6s-cloud` は、主にコミュニティの主宰者に提供され、コミュニティの盛り上がりの分析に利用することができます。  
 また、コミュニティの利用者は `a6s-cloud` を閲覧・検索することによって、`hot` なコミュニティを探し出すことができます。
@@ -32,10 +23,19 @@ TBA ...
 
 ---
 ## FOR DEVELOPER
+* Vue.js
+* TypeScript
+
+* Sass
+
+* PHP
+* Laravel
+* Python
+* MySQL
 
 `a6s-cloud` はモダンな技術に挑戦し続けるハッカーたちによるアプリケーションです。  
-モダンなアーキテクチャ、トレンドの言語に挑戦し、開発手法とシステム要件は日々進歩を続けます。  
-何らかの制約・懸念・計画のない限り、モダンなバージョン・手法・環境を用いて開発されています。
+モダンなアーキテクチャ、トレンドのスタイルに挑戦し、開発手法とシステム要件は日々進歩を続けます。  
+何らかの制約・懸念・計画のない限り、最新のバージョン・手法・環境を用いて開発されています。
 
 `a6s-cloud` は [a6s-cloud-front](https://github.com/nsuzuki7713/a6s-cloud-front) と [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend) の2つのプログラムにより構成されたSPA形式のアーキテクチャを採用しており、これはそのフロントエンドを担うa6s-cloud-front のリポジトリです。
 

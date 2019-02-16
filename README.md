@@ -43,13 +43,13 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 
 `a6s-cloud` の概要、理念、開発スタイル及び、利用方法は下記を御覧ください。
 
-## DEVELOPMENT POLICY
+## DEVELOPMENT POLICY
 
 ## DOCUMENTS
 * Outer Spec
 * Inner Spec
 * Function Design
-* Develop Style
+* Development Style
 
 ## JOIN US
 ### OWNER

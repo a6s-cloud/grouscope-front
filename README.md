@@ -41,7 +41,7 @@ TBA ...
 
 Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend)
 
-`a6s-cloud` の概要、理念、開発スタイル及び、利用方法は下記を御覧ください。
+`a6s-cloud` の開発における理念・仕様・スタイル及びコントリビュート方法は下記を御覧ください。
 
 ## DEVELOPMENT POLICY
 

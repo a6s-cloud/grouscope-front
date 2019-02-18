@@ -26,6 +26,7 @@ TBA ...
 * Vue.js
 * TypeScript
 * Sass
+* element ui
 * PHP
 * Laravel
 * Python

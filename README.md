@@ -50,6 +50,7 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * Inner Spec
 * Function Design
 * Development Style
+* [DB設計書](https://docs.google.com/spreadsheets/d/1yKhZl0ISlI6fhFIjqpVFvrnn9nDJPN232Z2RQCOOH7Q/edit#gid=0)
 
 ## JOIN US
 ### OWNER

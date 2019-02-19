@@ -63,6 +63,7 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * [新規メンバーを追加する手順](https://a6s-cloud.kibe.la/notes/6)
 * [kibelaとslackの通知連携方法](https://a6s-cloud.kibe.la/notes/4)
 * [git hubとslack連携](https://a6s-cloud.kibe.la/notes/2)
+* [[他言語経験者向け]他プログラミング言語からのPHP 移行チートシート](https://a6s-cloud.kibe.la/notes/8)
 
 ## JOIN US
 ### OWNER

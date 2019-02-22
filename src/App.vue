@@ -1,15 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <div>
-      <p>
+      <!-- <p>
         If Element is successfully added to this project, you'll see an
         <code v-text="'<el-button>'"></code>
         below
-      </p>
-      <el-button>el-button</el-button>
+      </p> -->
+      <el-button @click="$router.push('naoto')">naoto</el-button>
+      <el-button @click="$router.push('tsutomu')">tsutomu</el-button>
+      <el-button @click="$router.push('toki')">toki</el-button>
+      <el-button @click="$router.push('minokich')">minokich</el-button>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 

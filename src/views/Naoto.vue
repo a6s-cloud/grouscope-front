@@ -1,19 +1,34 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
-    なおとさん専用ページ
+  <div class="home">なおとさん専用ページ
+    <el-input placeholder="Please input" v-model="input"></el-input>
+    <p>{{input}}</p>
+
+    <div class="block">
+      <span class="demonstration">カスタムバー</span>
+      <el-slider v-model="value2"></el-slider>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-@Component({
-  components: {
-    HelloWorld,
+import Vue from 'vue';
+export default Vue.extend({
+  data: function() {
+    return {
+      input: '',
+      value2: 50
+    };
   },
-})
-export default class Home extends Vue {}
+  methods: {
+    test: function() {
+      console.log('aa');
+    }
+  }
+});
 </script>
+<style scoped>
+.home {
+  width: 400px;
+  margin: 0 auto;
+}
+</style>

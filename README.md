@@ -51,8 +51,7 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * Development Style
 * [DB設計書](https://docs.google.com/spreadsheets/d/1yKhZl0ISlI6fhFIjqpVFvrnn9nDJPN232Z2RQCOOH7Q/edit#gid=0)
 * コンテナ構成図
-* git運用フロー(branchやプルリク)
-* issuesの使い方
+* [タスクとgit hub運用フロー](https://a6s-cloud.kibe.la/notes/13)
 
 ## 使用サービス
 * slack

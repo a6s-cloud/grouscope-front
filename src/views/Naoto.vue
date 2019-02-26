@@ -12,24 +12,22 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import axios from "axios";
+import Vue from 'vue';
+import axios from 'axios';
 export default Vue.extend({
   data: function() {
     return {
-      input: "",
+      input: '',
       value2: 50,
-      info: "" as any
+      info: '' as any
     };
   },
   mounted() {
-    axios
-      .get("http://localhost/api/articles")
-      .then(response => (this.info = response));
+    axios.get('http://localhost/api/articles').then(response => (this.info = response));
   },
   methods: {
     test: function() {
-      console.log("aa");
+      console.log('aa');
     }
   }
 });

@@ -51,14 +51,14 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * Development Style
 * [DB設計書](https://docs.google.com/spreadsheets/d/1yKhZl0ISlI6fhFIjqpVFvrnn9nDJPN232Z2RQCOOH7Q/edit#gid=0)
 * コンテナ構成図
-* git運用フロー(branchやプルリク)
-* issuesの使い方
+* [タスクとgit hub運用フロー](https://a6s-cloud.kibe.la/notes/13)
 
 ## 使用サービス
 * slack
 * kibela
 
 ## その他
+* [自己紹介](https://a6s-cloud.kibe.la/notes/11)
 * [Laravel5.7 お役立ち記事リンク集](https://a6s-cloud.kibe.la/notes/7)
 * [新規メンバーを追加する手順](https://a6s-cloud.kibe.la/notes/6)
 * [kibelaとslackの通知連携方法](https://a6s-cloud.kibe.la/notes/4)

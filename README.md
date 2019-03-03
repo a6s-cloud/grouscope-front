@@ -23,14 +23,8 @@ TBA ...
 
 ---
 ## FOR DEVELOPER
-* Vue.js
-* TypeScript
-* Sass
-* element ui
-* PHP
-* Laravel
-* Python
-* MySQL
+
+![a6s-cloud 構成図](/doc/diagrams/architecture.jpg)
 
 `a6s-cloud` はモダンな技術に挑戦し続けるハッカーたちによるアプリケーションです。  
 モダンなアーキテクチャ、トレンドのスタイルに挑戦し、開発手法とシステム要件は日々進歩を続けます。  
@@ -52,6 +46,7 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * [DB設計書](https://docs.google.com/spreadsheets/d/1yKhZl0ISlI6fhFIjqpVFvrnn9nDJPN232Z2RQCOOH7Q/edit#gid=0)
 * コンテナ構成図
 * [タスクとgit hub運用フロー](https://a6s-cloud.kibe.la/notes/13)
+* [drow.ioによる構成図作成方法](https://github.com/nsuzuki7713/a6s-cloud-front/tree/master/doc/diagrams)
 
 ## 使用サービス
 * slack

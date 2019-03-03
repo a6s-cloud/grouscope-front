@@ -61,6 +61,7 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * [kibelaとslackの通知連携方法](https://a6s-cloud.kibe.la/notes/4)
 * [git hubとslack連携](https://a6s-cloud.kibe.la/notes/2)
 * [[他言語経験者向け]他プログラミング言語からのPHP 移行チートシート](https://a6s-cloud.kibe.la/notes/8)
+* [新規参入手順をドキュメント化する。](https://github.com/nsuzuki7713/a6s-cloud-front/issues/27)
 
 ## 打ち合わせ議事録
 * [第1回 対面MTG_2019/02/10](https://a6s-cloud.kibe.la/notes/15)

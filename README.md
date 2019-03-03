@@ -65,6 +65,9 @@ Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuz
 * [git hubとslack連携](https://a6s-cloud.kibe.la/notes/2)
 * [[他言語経験者向け]他プログラミング言語からのPHP 移行チートシート](https://a6s-cloud.kibe.la/notes/8)
 
+## 打ち合わせ議事録
+* [https://a6s-cloud.kibe.la/notes/15](https://a6s-cloud.kibe.la/notes/15)
+
 ## JOIN US
 ### OWNER
 [nsuzuki](https://github.com/nsuzuki7713)  

@@ -1,3 +1,5 @@
+![a6s-cloud 構成図](/doc/image/a6s-cloud-icon/facebook_cover_photo_2.png)
+
 # a6s-cloud
 [visit our site !!]()
 

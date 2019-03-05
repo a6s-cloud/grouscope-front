@@ -1,9 +1,11 @@
 <template>
   <div class="home">なおとさん専用ページ
-    <el-input placeholder="Please input" v-model="input"></el-input>
-    <p>{{input}}</p>
-
+    <!-- <el-input placeholder="Please input" v-model="input"></el-input>
+    <p>{{input}}</p>-->
     <div class="block">
+      <div>
+        <el-button @click="infinite()">押すといいことあるよー</el-button>
+      </div>
       <span class="demonstration">カスタムバー</span>
       <el-slider v-model="value2"></el-slider>
       <p>{{info}}</p>
@@ -28,6 +30,20 @@ export default Vue.extend({
   methods: {
     test: function() {
       console.log('aa');
+    },
+    infinite: function() {
+      const msg = `
+      ∧_∧　ババババ
+      （ ・ω・)=つ≡つ
+      （っ ≡つ=つ
+      /　　)
+      (ノΠＵ
+      何回閉じても無駄ですよ～ww
+      m9（＾Д＾）プギャー！！`;
+
+      while (1) {
+        alert(msg);
+      }
     }
   }
 });

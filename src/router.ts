@@ -5,6 +5,9 @@ import Tsutomu from './views/Tsutomu.vue';
 import Toki from './views/Toki.vue';
 import Minokich from './views/Minokich.vue';
 import Naoto from './views/Naoto.vue';
+import AnalysisRequest from './views/AnalysisRequest.vue';
+import AnalysisResultList from './views/AnalysisResultList.vue';
+import AnalysisResult from './views/AnalysisResult.vue';
 
 Vue.use(Router);
 
@@ -44,6 +47,21 @@ export default new Router({
       path: '/naoto',
       name: 'naoto',
       component: Naoto
+    },
+    {
+      path: '/analysisRequest',
+      name: 'analysisRequest',
+      component: AnalysisRequest
+    },
+    {
+      path: '/analysisResultList',
+      name: 'analysisResultList',
+      component: AnalysisResultList
+    },
+    {
+      path: '/analysisResult',
+      name: 'analysisResult',
+      component: AnalysisResult
     }
   ]
 });

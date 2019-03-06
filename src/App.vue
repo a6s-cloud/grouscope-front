@@ -12,6 +12,11 @@
       <el-button @click="$router.push('toki')">toki</el-button>
       <el-button @click="$router.push('minokich')">minokich</el-button>
     </div>
+    <div style="margin-top:8px;">
+      <el-button @click="$router.push('analysisRequest')">解析依頼画面</el-button>
+      <el-button @click="$router.push('analysisResultList')">解析結果一覧画面</el-button>
+      <el-button @click="$router.push('analysisResult')">解析結果画面</el-button>
+    </div>
     <router-view></router-view>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>

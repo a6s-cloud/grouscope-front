@@ -26,8 +26,6 @@ TBA ...
 ---
 ## FOR DEVELOPER
 
-![a6s-cloud 構成図](/doc/diagrams/architecture.jpg)
-
 `a6s-cloud` はモダンな技術に挑戦し続けるハッカーたちによるアプリケーションです。  
 モダンなアーキテクチャ、トレンドのスタイルに挑戦し、開発手法とシステム要件は日々進歩を続けます。  
 何らかの制約・懸念・計画のない限り、最新のバージョン・手法・環境を用いて開発されています。
@@ -37,6 +35,12 @@ TBA ...
 Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend)
 
 `a6s-cloud` の開発における理念・仕様・スタイル及びコントリビュート方法は下記を御覧ください。
+
+## 使用技術
+![a6s-cloud 構成図](/doc/diagrams/architecture.jpg)
+
+## Laradockの検証環境構成図
+![Laradockの検証環境構成図](/doc/diagrams/structure_of_laradock.jpg)
 
 ## DEVELOPMENT POLICY
 

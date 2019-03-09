@@ -30,9 +30,10 @@ TBA ...
 モダンなアーキテクチャ、トレンドのスタイルに挑戦し、開発手法とシステム要件は日々進歩を続けます。  
 何らかの制約・懸念・計画のない限り、最新のバージョン・手法・環境を用いて開発されています。
 
-`a6s-cloud` は [a6s-cloud-front](https://github.com/nsuzuki7713/a6s-cloud-front) と [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend) の2つのプログラムにより構成されたSPA形式のアーキテクチャを採用しており、これはそのフロントエンドを担うa6s-cloud-front のリポジトリです。
+`a6s-cloud` は [a6s-cloud-front](https://github.com/nsuzuki7713/a6s-cloud-front) と [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend)と[a6s-cloud-batch](https://github.com/nsuzuki7713/a6s-cloud-batch) の3つのプログラムにより構成されたSPA形式のアーキテクチャを採用しており、これはそのフロントエンドを担うa6s-cloud-front のリポジトリです。
 
-Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend)
+Repository of Back-end application : [a6s-cloud-backend](https://github.com/nsuzuki7713/a6s-cloud-backend)  
+Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki7713/a6s-cloud-batch)
 
 `a6s-cloud` の開発における理念・仕様・スタイル及びコントリビュート方法は下記を御覧ください。
 

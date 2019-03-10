@@ -36,7 +36,11 @@
             </ul>
           </div>
           <el-progress type="circle" :percentage="80" color="#8e71c7" status="text">残り10個</el-progress>
-
+          <div style="width:50%">
+            <span class="demonstration">スライダー</span>
+            <el-slider v-model="value2"></el-slider>
+            <p>{{info}}</p>
+          </div>
           <div>
             <el-radio v-model="radio" label="1">緑</el-radio>
             <el-radio v-model="radio" label="2">青</el-radio>
@@ -83,7 +87,8 @@ export default Vue.extend({
       (ノΠＵ
       何回閉じても無駄ですよ～ww
       m9（＾Д＾）プギャー！！`;
-      while (1) {
+
+      for (let i = 0; i < this.value2; i++) {
         alert(msg);
       }
     }

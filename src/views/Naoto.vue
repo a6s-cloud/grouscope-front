@@ -1,12 +1,5 @@
 <template>
   <div class="home">なおとさん専用ページ
-    <!-- <el-input placeholder="Please input" v-model="input"></el-input>
-    <p>{{input}}</p>-->
-    <!-- <div class="block">
-      <span class="demonstration">カスタムバー</span>
-      <el-slider v-model="value2"></el-slider>
-      <p>{{info}}</p>
-    </div>-->
     <el-row>
       <el-col :span="12">
         <div class="grid-content">
@@ -14,10 +7,8 @@
             <el-carousel height="400px">
               <el-carousel-item v-for="item in image_data" :key="item">
                 <img :src="image_path(item)">
-                <!-- {{item}} -->
               </el-carousel-item>
             </el-carousel>
-            <!-- <img src="../assets/naoto/vmSocks-blue.jpg"> -->
           </div>
           <div>
             <el-rate

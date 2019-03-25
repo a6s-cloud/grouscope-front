@@ -71,6 +71,7 @@ Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki77
 ## 打ち合わせ議事録
 * [第1回 対面MTG_2019/02/10](https://a6s-cloud.kibe.la/notes/15)
 * [第2回 対面MTG_2019/03/03](https://a6s-cloud.kibe.la/notes/16)
+* [第3回 対面MTG_2019/03/25](https://a6s-cloud.kibe.la/notes/17)
 
 ## JOIN US
 ### OWNER

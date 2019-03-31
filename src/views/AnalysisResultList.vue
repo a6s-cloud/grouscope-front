@@ -117,8 +117,9 @@ export default Vue.extend({
   width: 1200px;
   margin: 0 auto;
 }
-
-<style > .el-row {
+</style>
+<style>
+.el-row {
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;

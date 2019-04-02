@@ -1,7 +1,7 @@
 ![a6s-cloud 構成図](/doc/image/a6s-cloud-icon/facebook_cover_photo_2.png)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/peach-hack/auto-matching/)
+[![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/nsuzuki7713/a6s-cloud-front)
 
 # a6s-cloud
 [visit our site !!]()

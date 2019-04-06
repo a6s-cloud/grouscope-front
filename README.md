@@ -4,12 +4,11 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/nsuzuki7713/a6s-cloud-front)
 
 # a6s-cloud
-[visit our site !!]()
 
 ## OVERVIEW
 `a6s-cloud` (analysis-cloud)
 
-[twitter](https://twitter.com) ハッシュタグ分析プラットフォーム
+twitterハッシュタグ分析プラットフォーム
 
 ## DESCRIPTION
 

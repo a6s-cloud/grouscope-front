@@ -69,6 +69,7 @@ Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki77
 * [git hubとslack連携](https://a6s-cloud.kibe.la/notes/2)
 * [[他言語経験者向け]他プログラミング言語からのPHP 移行チートシート](https://a6s-cloud.kibe.la/notes/8)
 * [新規参入手順をドキュメント化する。](https://github.com/nsuzuki7713/a6s-cloud-front/issues/27)
+* [GitHubのWebhookでプルリクエストをマージした際にツイートできるようしてみた](https://qiita.com/turmericN/items/f6267a75be45c51eaed7)
 
 ## 打ち合わせ議事録
 * [第1回 対面MTG_2019/02/10](https://a6s-cloud.kibe.la/notes/15)

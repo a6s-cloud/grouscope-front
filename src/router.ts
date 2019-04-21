@@ -59,7 +59,7 @@ export default new Router({
       component: AnalysisResultList
     },
     {
-      path: '/analysisResult',
+      path: '/analysisResult/:id',
       name: 'analysisResult',
       component: AnalysisResult
     }

@@ -117,7 +117,6 @@ export default Vue.extend({
     },
     getAnalysisResult: function() {
       const endpoint = `http://localhost/api/v1/AnalysisResults/${this.$route.params.id}`;
-      console.log(endpoint);
 
       axios
         .get(endpoint, { timeout: 5000 })

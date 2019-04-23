@@ -17,10 +17,10 @@
 
     <div>
       <span>ユーザランキング</span>
-      <el-table :data="tableUserRank" stripe style="width: 50%;margin:0 auto;">
-        <el-table-column prop="no" label="No" width="180"></el-table-column>
-        <el-table-column prop="name" label="Name" width="180"></el-table-column>
-        <el-table-column prop="tweet" label="ツイート数"></el-table-column>
+      <el-table :data="tableUserRank" stripe style="width: 60%;margin:0 auto;" :height="500">
+        <el-table-column prop="no" label="No" width="50px"></el-table-column>
+        <el-table-column prop="name" label="Name"></el-table-column>
+        <el-table-column prop="tweet" label="ツイート数" width="130px"></el-table-column>
       </el-table>
     </div>
 
@@ -72,6 +72,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import axios from 'axios';
 
 export default Vue.extend({
   data: function() {
@@ -107,9 +108,50 @@ export default Vue.extend({
       ]
     };
   },
+  mounted: function() {
+    this.getAnalysisResult();
+  },
   methods: {
     image_path: function(image: any) {
       return require('@/assets/naoto/result.png');
+    },
+    getAnalysisResult: function() {
+      const endpoint = `http://localhost/api/v1/AnalysisResults/${this.$route.params.id}`;
+      console.log(endpoint);
+
+      axios
+        .get(endpoint, { timeout: 5000 })
+        .then(response => {
+          this.startDate = response.data.analysis_start_date;
+          this.endDate = response.data.analysis_end_date;
+          this.analysisWord = response.data.analysis_word;
+          this.tweetCount = response.data.tweet_count;
+          this.favoriteCount = response.data.favorite_count;
+          this.userCount = response.data.user_count;
+          this.retweetCount = response.data.retweet_count;
+          this.tableUserRank = response.data.user_ranking.map((val: any, index: any) => {
+            return {
+              no: index,
+              name: `${val.user_name}(@${val.user_account})`,
+              tweet: `${val.tweet_count}ツイート`
+            };
+          });
+          // TODO:URLはバックエンド実装後取得
+        })
+        .catch(error => {
+          if (error.code === 'ECONNABORTED') {
+            // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
+            (this as any).$notify.error({
+              title: 'Error',
+              message: 'サーバとの接続がタイムアウトしました'
+            });
+          } else {
+            (this as any).$notify.error({
+              title: 'Error',
+              message: 'データの取得に失敗しました'
+            });
+          }
+        });
     }
   }
 });

@@ -4,7 +4,7 @@
       <span>Word Cloudの画像</span>
       <el-col>
         <el-card :body-style="{ padding: '0px' }" style="width:940px;margin:0 auto;">
-          <img :src="image_path()" class="image">
+          <img :src="image_path(image)" class="image" />
           <div style="padding: 14px;">
             <span>{{analysisWord}}</span>
             <div class="bottom clearfix">
@@ -77,6 +77,7 @@ import axios from 'axios';
 export default Vue.extend({
   data: function() {
     return {
+      image: undefined,
       startDate: '2019-04-17 00:00:00',
       endDate: '2019-04-17 23:59:59',
       analysisWord: '#技術書典',
@@ -113,7 +114,10 @@ export default Vue.extend({
   },
   methods: {
     image_path: function(image: any) {
-      return require('@/assets/naoto/result.png');
+      if (image === undefined) {
+        return;
+      }
+      return 'http://localhost/storage/' + image;
     },
     getAnalysisResult: function() {
       const endpoint = `http://localhost/api/v1/AnalysisResults/${this.$route.params.id}`;
@@ -121,6 +125,7 @@ export default Vue.extend({
       axios
         .get(endpoint, { timeout: 5000 })
         .then(response => {
+          this.image = response.data.image;
           this.startDate = response.data.analysis_start_date;
           this.endDate = response.data.analysis_end_date;
           this.analysisWord = response.data.analysis_word;
@@ -135,7 +140,6 @@ export default Vue.extend({
               tweet: `${val.tweet_count}ツイート`
             };
           });
-          // TODO:URLはバックエンド実装後取得
         })
         .catch(error => {
           if (error.code === 'ECONNABORTED') {

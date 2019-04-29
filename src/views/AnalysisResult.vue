@@ -73,18 +73,19 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import axios from 'axios';
+import { ANALYSIS_RESULT } from '../mockdata/testData';
 
 export default Vue.extend({
   data: function() {
     return {
-      image: undefined,
-      startDate: '2019-04-17 00:00:00',
-      endDate: '2019-04-17 23:59:59',
-      analysisWord: '#技術書典',
-      tweetCount: '872',
-      favoriteCount: '489',
-      userCount: '849',
-      retweetCount: '3518',
+      image: undefined as any,
+      startDate: '2019-04-17 00:00:00' as any,
+      endDate: '2019-04-17 23:59:59' as any,
+      analysisWord: '#技術書典' as any,
+      tweetCount: '872' as any,
+      favoriteCount: '489' as any,
+      userCount: '849' as any,
+      retweetCount: '3518' as any,
       tableUserRank: [
         {
           no: '1',
@@ -106,7 +107,7 @@ export default Vue.extend({
           name: 'なおと4(@naoto_7713)',
           tweet: '150ツイート'
         }
-      ]
+      ] as any
     };
   },
   mounted: function() {
@@ -114,6 +115,10 @@ export default Vue.extend({
   },
   methods: {
     image_path: function(image: any) {
+      if (image === 'dummy') {
+        return require('@/assets/naoto/result.png');
+      }
+
       if (image === undefined) {
         return;
       }
@@ -142,18 +147,40 @@ export default Vue.extend({
           });
         })
         .catch(error => {
-          if (error.code === 'ECONNABORTED') {
-            // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
-            (this as any).$notify.error({
-              title: 'Error',
-              message: 'サーバとの接続がタイムアウトしました'
-            });
-          } else {
-            (this as any).$notify.error({
-              title: 'Error',
-              message: 'データの取得に失敗しました'
-            });
-          }
+          // テストデータを反映
+          this.image = ANALYSIS_RESULT.image;
+          this.startDate = ANALYSIS_RESULT.analysis_start_date;
+          this.endDate = ANALYSIS_RESULT.analysis_end_date;
+          this.analysisWord = ANALYSIS_RESULT.analysis_word;
+          this.tweetCount = ANALYSIS_RESULT.tweet_count;
+          this.favoriteCount = ANALYSIS_RESULT.favorite_count;
+          this.userCount = ANALYSIS_RESULT.user_count;
+          this.retweetCount = ANALYSIS_RESULT.retweet_count;
+          this.tableUserRank = ANALYSIS_RESULT.user_ranking.map((val: any, index: any) => {
+            return {
+              no: index,
+              name: `${val.user_name}(@${val.user_account})`,
+              tweet: `${val.tweet_count}ツイート`
+            };
+          });
+          (this as any).$notify.warning({
+            title: 'warning',
+            message: 'テストデータを反映しました。'
+          });
+
+          // 本番環境では下記を使用する
+          // if (error.code === 'ECONNABORTED') {
+          //   // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
+          //   (this as any).$notify.error({
+          //     title: 'Error',
+          //     message: 'サーバとの接続がタイムアウトしました'
+          //   });
+          // } else {
+          //   (this as any).$notify.error({
+          //     title: 'Error',
+          //     message: 'データの取得に失敗しました'
+          //   });
+          // }
         });
     }
   }

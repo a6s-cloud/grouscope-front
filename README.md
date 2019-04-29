@@ -23,7 +23,9 @@ twitterハッシュタグ分析プラットフォーム
 `a6s-cloud` は主に、話題のイベント、人気のカフェ、最新の情報を分析するユースケースを想定しています。
 
 ## DEMO
-TBA ...
+[![Netlify Status](https://api.netlify.com/api/v1/badges/045fd4a5-257a-4c4f-b072-7db70c27e1a4/deploy-status)](https://app.netlify.com/sites/stoic-leavitt-29ed14/deploys)  
+https://stoic-leavitt-29ed14.netlify.com/  
+※テストデータを差し込んだ画面確認となります。(Backendとの連携はしていません。)
 
 ---
 ## FOR DEVELOPER

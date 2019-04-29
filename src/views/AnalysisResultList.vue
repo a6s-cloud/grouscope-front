@@ -45,6 +45,7 @@ import Vue from 'vue';
 import axios from 'axios';
 import { Component } from 'vue-property-decorator';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { ANALYSIS_RESULT_LISTS } from '../mockdata/testData';
 
 export default Vue.extend({
   data: function() {
@@ -94,18 +95,27 @@ export default Vue.extend({
           this.loading = false;
         })
         .catch(error => {
-          if (error.code === 'ECONNABORTED') {
-            // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
-            (this as any).$notify.error({
-              title: 'Error',
-              message: 'サーバとの接続がタイムアウトしました'
-            });
-          } else {
-            (this as any).$notify.error({
-              title: 'Error',
-              message: 'データの取得に失敗しました'
-            });
-          }
+          // テストデータを反映
+          // @ts-ignore
+          this.tableData = ANALYSIS_RESULT_LISTS.data;
+          (this as any).$notify.warning({
+            title: 'warning',
+            message: 'テストデータを反映しました。'
+          });
+
+          // 本番環境では下記を使用する
+          // if (error.code === 'ECONNABORTED') {
+          //   // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
+          //   (this as any).$notify.error({
+          //     title: 'Error',
+          //     message: 'サーバとの接続がタイムアウトしました'
+          //   });
+          // } else {
+          //   (this as any).$notify.error({
+          //     title: 'Error',
+          //     message: 'データの取得に失敗しました'
+          //   });
+          // }
           this.loading = false;
         });
     }

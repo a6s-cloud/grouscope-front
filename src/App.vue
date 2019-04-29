@@ -1,17 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <div>
-      <!-- <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>-->
-      <el-button @click="$router.push('naoto')">naoto</el-button>
-      <el-button @click="$router.push('tsutomu')">tsutomu</el-button>
-      <el-button @click="$router.push('toki')">toki</el-button>
-      <el-button @click="$router.push('minokich')">minokich</el-button>
-    </div>
     <div style="margin-top:8px;">
       <el-button @click="$router.push({ name: 'analysisRequest' })">解析依頼画面</el-button>
       <el-button @click="$router.push({ name: 'analysisResultList' })">解析結果一覧画面</el-button>

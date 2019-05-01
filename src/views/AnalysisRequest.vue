@@ -67,7 +67,13 @@ export default Vue.extend({
   },
   methods: {
     onSubmit() {
-      console.log(this.form);
+      const loading = (this as any).$loading({
+        lock: true,
+        text: '解析中',
+        spinner: 'el-icon-loading',
+        background: 'rgba(0, 0, 0, 0.7)'
+      });
+
       const endpoint = 'http://localhost/api/v1/AnalysisRequests';
       const params = new URLSearchParams();
       params.append('start_date', this.form.date1);
@@ -75,15 +81,21 @@ export default Vue.extend({
       params.append('url', this.form.url);
       params.append('analysis_timing', '[' + this.form.timing.join(',') + ']');
       params.append('auto_tweet', String(this.form.tweet));
-      console.log(params);
+
       this.centerDialogVisible = false;
 
       axios
         .post(endpoint, params)
         .then(response => {
+          loading.close();
           console.log('完了');
         })
         .catch(error => {
+          // front画面のみで確認用で入れてます（実際は必要ない見込み）
+          setTimeout(() => {
+            loading.close();
+          }, 2000);
+
           if (error.code === 'ECONNABORTED') {
             // FIXME: this.$notify とするとtypescript が型エラーを出す。(this as any).$notify は暫定対処
             (this as any).$notify.error({

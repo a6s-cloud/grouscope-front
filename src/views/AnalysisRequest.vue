@@ -67,7 +67,7 @@ export default Vue.extend({
   },
   methods: {
     onSubmit() {
-      const loading = this.$loading({
+      const loading = (this as any).$loading({
         lock: true,
         text: '解析中',
         spinner: 'el-icon-loading',

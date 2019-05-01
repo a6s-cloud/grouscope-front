@@ -27,9 +27,23 @@
         </el-col>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="onSubmit">解析依頼</el-button>
+        <el-button type="primary" @click="centerDialogVisible = true">解析依頼</el-button>
       </el-form-item>
     </el-form>
+
+    <el-dialog title="下記内容で抽出します。よろしいですか？" :visible.sync="centerDialogVisible" width="250px;" center>
+      <div>
+        <div>日付:{{form.date1}}</div>
+        <div>検索ワード:{{form.search}}</div>
+        <div>URL:{{form.url}}</div>
+        <div>解析タイミング:【TODO】今後修正する</div>
+        <div>自動つぶやき:【TODO】今後修正する</div>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="centerDialogVisible = false">キャンセル</el-button>
+        <el-button type="primary" @click="onSubmit">解析</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
@@ -47,7 +61,8 @@ export default Vue.extend({
         url: '',
         timing: [],
         tweet: false
-      }
+      },
+      centerDialogVisible: false
     };
   },
   methods: {
@@ -61,6 +76,7 @@ export default Vue.extend({
       params.append('analysis_timing', '[' + this.form.timing.join(',') + ']');
       params.append('auto_tweet', String(this.form.tweet));
       console.log(params);
+      this.centerDialogVisible = false;
 
       axios
         .post(endpoint, params)

@@ -89,11 +89,13 @@ export default Vue.extend({
         .then(response => {
           loading.close();
           console.log('完了');
+          this.$router.push({ path: `/analysisResult/${response.data}` });
         })
         .catch(error => {
           // front画面のみで確認用で入れてます（実際は必要ない見込み）
           setTimeout(() => {
             loading.close();
+            this.$router.push({ path: `/analysisResult/1` });
           }, 2000);
 
           if (error.code === 'ECONNABORTED') {

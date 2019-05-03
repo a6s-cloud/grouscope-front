@@ -14,9 +14,9 @@
         <div class="grid-content bg-purple-dark">
           <el-table v-loading="loading" :data="tableData" stripe style="width: 100%" @row-click="redirectAnotherPage">
             <el-table-column prop="id" label="ID" width="180"> </el-table-column>
-            <el-table-column prop="analysis_start_date" label="検索開始日" width="180"> </el-table-column>
-            <el-table-column prop="analysis_end_date" label="検索終了日" width="180"> </el-table-column>
-            <el-table-column prop="analysis_word" label="検索ワード" width="180"> </el-table-column>
+            <el-table-column prop="analysisStartDate" label="検索開始日" width="180"> </el-table-column>
+            <el-table-column prop="analysisEndDate" label="検索終了日" width="180"> </el-table-column>
+            <el-table-column prop="analysisWord" label="検索ワード" width="180"> </el-table-column>
             <el-table-column prop="status" label="ステータス" width="180">
               <template slot-scope="prop">
                 <el-tag type="info" v-if="prop.row.status === 0"><i class="el-icon-time"></i>&nbsp;処理待ち</el-tag>
@@ -25,9 +25,9 @@
                 <el-tag type="danger" v-else-if="prop.row.status === 3"><i class="el-icon-error"></i>&nbsp;失敗</el-tag>
               </template>
             </el-table-column>
-            <el-table-column prop="favorite_count" label="いいね数"> </el-table-column>
-            <el-table-column prop="user_count" label="ユーザ数"> </el-table-column>
-            <el-table-column prop="tweet_count" label="ツイート総数"> </el-table-column>
+            <el-table-column prop="favoriteCount" label="いいね数"> </el-table-column>
+            <el-table-column prop="userCount" label="ユーザ数"> </el-table-column>
+            <el-table-column prop="tweetCount" label="ツイート総数"> </el-table-column>
           </el-table>
         </div>
       </el-col>

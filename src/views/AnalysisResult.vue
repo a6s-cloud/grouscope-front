@@ -131,36 +131,36 @@ export default Vue.extend({
         .get(endpoint, { timeout: 5000 })
         .then(response => {
           this.image = response.data.image;
-          this.startDate = response.data.analysis_start_date;
-          this.endDate = response.data.analysis_end_date;
-          this.analysisWord = response.data.analysis_word;
-          this.tweetCount = response.data.tweet_count;
-          this.favoriteCount = response.data.favorite_count;
-          this.userCount = response.data.user_count;
-          this.retweetCount = response.data.retweet_count;
-          this.tableUserRank = response.data.user_ranking.map((val: any, index: any) => {
+          this.startDate = response.data.analysisStartDate;
+          this.endDate = response.data.analysisEndDate;
+          this.analysisWord = response.data.analysisWord;
+          this.tweetCount = response.data.tweetCount;
+          this.favoriteCount = response.data.favoriteCount;
+          this.userCount = response.data.userCount;
+          this.retweetCount = response.data.retweetCount;
+          this.tableUserRank = response.data.userRanking.map((val: any, index: any) => {
             return {
               no: index,
-              name: `${val.user_name}(@${val.user_account})`,
-              tweet: `${val.tweet_count}ツイート`
+              name: `${val.userName}(@${val.userAccount})`,
+              tweet: `${val.tweetCount}ツイート`
             };
           });
         })
         .catch(error => {
           // テストデータを反映
           this.image = ANALYSIS_RESULT.image;
-          this.startDate = ANALYSIS_RESULT.analysis_start_date;
-          this.endDate = ANALYSIS_RESULT.analysis_end_date;
-          this.analysisWord = ANALYSIS_RESULT.analysis_word;
-          this.tweetCount = ANALYSIS_RESULT.tweet_count;
-          this.favoriteCount = ANALYSIS_RESULT.favorite_count;
-          this.userCount = ANALYSIS_RESULT.user_count;
-          this.retweetCount = ANALYSIS_RESULT.retweet_count;
-          this.tableUserRank = ANALYSIS_RESULT.user_ranking.map((val: any, index: any) => {
+          this.startDate = ANALYSIS_RESULT.analysisStartDate;
+          this.endDate = ANALYSIS_RESULT.analysisEndDate;
+          this.analysisWord = ANALYSIS_RESULT.analysisWord;
+          this.tweetCount = ANALYSIS_RESULT.tweetCount;
+          this.favoriteCount = ANALYSIS_RESULT.favoriteCount;
+          this.userCount = ANALYSIS_RESULT.userCount;
+          this.retweetCount = ANALYSIS_RESULT.retweetCount;
+          this.tableUserRank = ANALYSIS_RESULT.userRanking.map((val: any, index: any) => {
             return {
               no: index,
-              name: `${val.user_name}(@${val.user_account})`,
-              tweet: `${val.tweet_count}ツイート`
+              name: `${val.userName}(@${val.userAccount})`,
+              tweet: `${val.tweetCount}ツイート`
             };
           });
           (this as any).$notify.warning({

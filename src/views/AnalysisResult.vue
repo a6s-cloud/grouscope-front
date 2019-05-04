@@ -4,7 +4,7 @@
       <span>Word Cloudの画像</span>
       <el-col>
         <el-card :body-style="{ padding: '0px' }" style="width:940px;margin:0 auto;">
-          <img :src="image_path(image)" class="image" />
+          <img :src="imagePath(image)" class="image" />
           <div style="padding: 14px;">
             <span>{{analysisWord}}</span>
             <div class="bottom clearfix">
@@ -114,7 +114,7 @@ export default Vue.extend({
     this.getAnalysisResult();
   },
   methods: {
-    image_path: function(image: any) {
+    imagePath: function(image: any) {
       if (image === 'dummy') {
         return require('@/assets/naoto/result.png');
       }

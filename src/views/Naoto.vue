@@ -5,8 +5,8 @@
         <div class="grid-content">
           <div class="product-image">
             <el-carousel height="400px">
-              <el-carousel-item v-for="item in image_data" :key="item">
-                <img :src="image_path(item)">
+              <el-carousel-item v-for="item in imageData" :key="item">
+                <img :src="imagePath(item)">
               </el-carousel-item>
             </el-carousel>
           </div>
@@ -65,7 +65,7 @@ export default Vue.extend({
       info: '' as any,
       value5: 3.7,
       radio: 1,
-      image_data: ['vmSocks-blue', 'vmSocks-green']
+      imageData: ['vmSocks-blue', 'vmSocks-green']
     };
   },
   mounted() {
@@ -75,7 +75,7 @@ export default Vue.extend({
     test: function() {
       console.log('aa');
     },
-    image_path: function(image: any) {
+    imagePath: function(image: any) {
       return require('@/assets/naoto/' + image + '.jpg');
     },
     infinite: function() {

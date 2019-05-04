@@ -76,11 +76,11 @@ export default Vue.extend({
 
       const endpoint = 'http://localhost/api/v1/AnalysisRequests';
       const params = new URLSearchParams();
-      params.append('start_date', this.form.date1);
-      params.append('analysis_word', this.form.search);
+      params.append('startDateg', this.form.date1);
+      params.append('analysisWord', this.form.search);
       params.append('url', this.form.url);
-      params.append('analysis_timing', '[' + this.form.timing.join(',') + ']');
-      params.append('auto_tweet', String(this.form.tweet));
+      params.append('analysisTiming', '[' + this.form.timing.join(',') + ']');
+      params.append('autoTweet', String(this.form.tweet));
 
       this.centerDialogVisible = false;
 

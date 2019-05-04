@@ -5,7 +5,7 @@
       <el-col :span="24">
         <div class="grid-content" style="background: #409EFF;color: white;">
           <div>検索ワード</div>
-          <el-input placeholder="Type something" prefix-icon="el-icon-search" v-model.lazy="search_word"> </el-input>
+          <el-input placeholder="Type something" prefix-icon="el-icon-search" v-model.lazy="searchWord"> </el-input>
         </div>
       </el-col>
     </el-row>
@@ -33,7 +33,7 @@
       </el-col>
 
       <el-col :span="24">
-        <el-pagination @current-change="handleSizeChange" background layout="prev, pager, next" :total="total_data">
+        <el-pagination @current-change="handleSizeChange" background layout="prev, pager, next" :total="totalData">
         </el-pagination>
       </el-col>
     </el-row>
@@ -50,9 +50,9 @@ import { ANALYSIS_RESULT_LISTS } from '../mockdata/testData';
 export default Vue.extend({
   data: function() {
     return {
-      search_word: '',
+      searchWord: '',
       tableData: [],
-      total_data: 0,
+      totalData: 0,
       loading: true
     };
   },
@@ -60,14 +60,14 @@ export default Vue.extend({
     this.getAnalysisResultList('', 1);
   },
   watch: {
-    search_word: function(newValue: string, oldValue: string) {
+    searchWord: function(newValue: string, oldValue: string) {
       this.getAnalysisResultList(newValue, 1);
       console.log('new value: ' + newValue + ', ' + 'old value: ' + oldValue);
     }
   },
   methods: {
     handleSizeChange(page: number) {
-      this.getAnalysisResultList(this.search_word, page);
+      this.getAnalysisResultList(this.searchWord, page);
     },
     redirectAnotherPage(element: any) {
       console.log(element.id);
@@ -76,7 +76,7 @@ export default Vue.extend({
     getAnalysisResultList(searchWord: string, page: number) {
       const params = [];
       if (searchWord) {
-        params.push('search_word=' + searchWord);
+        params.push('searchWord=' + searchWord);
       }
       if (page) {
         params.push('page=' + page);
@@ -91,7 +91,7 @@ export default Vue.extend({
         .get(endpoint, { timeout: 5000 })
         .then(response => {
           this.tableData = response.data.data;
-          this.total_data = response.data.total;
+          this.totalData = response.data.total;
           this.loading = false;
         })
         .catch(error => {

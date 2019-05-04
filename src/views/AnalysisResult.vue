@@ -122,10 +122,10 @@ export default Vue.extend({
       if (image === undefined) {
         return;
       }
-      return 'http://localhost/storage/' + image;
+      return process.env.VUE_APP_API_URL_BASE_STORAGE + image;
     },
     getAnalysisResult: function() {
-      const endpoint = `http://localhost/api/v1/AnalysisResults/${this.$route.params.id}`;
+      const endpoint = process.env.VUE_APP_API_URL_BASE + `AnalysisResults/${this.$route.params.id}`;
 
       axios
         .get(endpoint, { timeout: 5000 })

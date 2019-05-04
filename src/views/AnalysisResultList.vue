@@ -84,7 +84,7 @@ export default Vue.extend({
 
       this.loading = true;
       const endpoint =
-        'http://localhost/api/v1/AnalysisResultLists' + (params.length !== 0 ? '?' + params.join('&') : '');
+        process.env.VUE_APP_API_URL_BASE + 'AnalysisResultLists' + (params.length !== 0 ? '?' + params.join('&') : '');
       console.log(endpoint);
 
       axios

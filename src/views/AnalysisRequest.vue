@@ -74,7 +74,7 @@ export default Vue.extend({
         background: 'rgba(0, 0, 0, 0.7)'
       });
 
-      const endpoint = 'http://localhost/api/v1/AnalysisRequests';
+      const endpoint = process.env.VUE_APP_API_URL_BASE + 'AnalysisRequests';
       const params = new URLSearchParams();
       params.append('start_date', this.form.date1);
       params.append('analysis_word', this.form.search);

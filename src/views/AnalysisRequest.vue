@@ -76,7 +76,7 @@ export default Vue.extend({
 
       const endpoint = process.env.VUE_APP_API_URL_BASE + 'AnalysisRequests';
       const params = new URLSearchParams();
-      params.append('startDateg', this.form.date1);
+      params.append('startDate', this.form.date1);
       params.append('analysisWord', this.form.search);
       params.append('url', this.form.url);
       params.append('analysisTiming', '[' + this.form.timing.join(',') + ']');

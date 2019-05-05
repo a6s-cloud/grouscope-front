@@ -71,9 +71,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import axios from 'axios';
-import { ANALYSIS_RESULT } from '../mockdata/testData';
+import { MOCK_ANALYSIS_RESULT } from '../mockdata/testData';
 import { IAnalysisResult, IUserRanking, initAnalysisResult } from '../interface/type';
 
 export default Vue.extend({
@@ -120,6 +119,7 @@ export default Vue.extend({
         })
         .catch(error => {
           // テストデータを反映
+          this.analysisResult = MOCK_ANALYSIS_RESULT;
           (this as any).$notify.warning({
             title: 'warning',
             message: 'テストデータを反映しました。'

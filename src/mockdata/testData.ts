@@ -30,7 +30,7 @@ export const ANALYSIS_RESULT_LISTS = {
       insertDate: '2019-04-29 13:29:14',
       updateDate: '2019-04-29 13:29:36',
       deleteFlag: 0,
-      url: null,
+      url: '',
       retweetCount: 3404995
     }
   ],
@@ -46,7 +46,7 @@ export const ANALYSIS_RESULT_LISTS = {
   total: 2
 };
 
-export const ANALYSIS_RESULT = {
+export const MOCK_ANALYSIS_RESULT = {
   id: 2,
   analysisStartDate: '2019-04-29 00:00:00',
   analysisEndDate: '2019-04-29 23:59:59',
@@ -59,7 +59,7 @@ export const ANALYSIS_RESULT = {
   insertDate: '2019-04-29 13:29:14',
   updateDate: '2019-04-29 13:29:36',
   deleteFlag: 0,
-  url: null,
+  url: '',
   retweetCount: 3404995,
   userRanking: [
     {

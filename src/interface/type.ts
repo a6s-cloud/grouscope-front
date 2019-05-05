@@ -17,7 +17,7 @@ export interface IAnalysisResult {
 }
 
 // AnalysisResultの初期化処理
-export const initAnalysisResult: IAnalysisResult  = {
+export const initAnalysisResult: IAnalysisResult = {
   analysisEndDate: '',
   analysisStartDate: '',
   analysisWord: '',
@@ -33,7 +33,7 @@ export const initAnalysisResult: IAnalysisResult  = {
   url: '',
   userCount: 0,
   userRanking: []
-}
+};
 
 export interface IUserRanking {
   tweetCount: number;

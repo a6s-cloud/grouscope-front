@@ -63,7 +63,11 @@ Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki77
 * slack
 * kibela
 
-## その他
+## ナレッジ(公開)
+* [GitHubのWebhookでプルリクエストをマージした際にツイートできるようしてみた](https://qiita.com/turmericN/items/f6267a75be45c51eaed7)
+* [PHP(Laravel)からGuzzleを使用して、connpass APIを叩いてみた](https://qiita.com/turmericN/items/77cf17d5f10a0f4dccd2)
+
+## ナレッジ(非公開)
 * [自己紹介](https://a6s-cloud.kibe.la/notes/11)
 * [Laravel5.7 お役立ち記事リンク集](https://a6s-cloud.kibe.la/notes/7)
 * [新規メンバーを追加する手順](https://a6s-cloud.kibe.la/notes/6)
@@ -71,7 +75,6 @@ Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki77
 * [git hubとslack連携](https://a6s-cloud.kibe.la/notes/2)
 * [[他言語経験者向け]他プログラミング言語からのPHP 移行チートシート](https://a6s-cloud.kibe.la/notes/8)
 * [新規参入手順をドキュメント化する。](https://github.com/nsuzuki7713/a6s-cloud-front/issues/27)
-* [GitHubのWebhookでプルリクエストをマージした際にツイートできるようしてみた](https://qiita.com/turmericN/items/f6267a75be45c51eaed7)
 
 ## 打ち合わせ議事録
 * [第1回 対面MTG_2019/02/10](https://a6s-cloud.kibe.la/notes/15)

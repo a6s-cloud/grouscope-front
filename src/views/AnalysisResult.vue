@@ -101,7 +101,7 @@ export default Vue.extend({
   methods: {
     imagePath: function(image: string) {
       if (image === 'dummy') {
-        return require('@/assets/naoto/result.png');
+        return require('@/assets/result.png');
       }
       if (image === '') {
         return;

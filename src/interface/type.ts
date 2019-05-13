@@ -55,5 +55,5 @@ export const initAnalysisRequest: IAnalysisRequest = {
   analysisWord: '',
   url: '',
   analysisTiming: [],
-  autoTweet: 0,
+  autoTweet: 0
 };

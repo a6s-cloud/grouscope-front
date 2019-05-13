@@ -40,3 +40,20 @@ export interface IUserRanking {
   userAccount: string;
   userName: string;
 }
+
+export interface IAnalysisRequest {
+  startDate: string;
+  analysisWord: string;
+  url: string;
+  analysisTiming: number[];
+  autoTweet: number;
+}
+
+// AnalysisRequestの初期化処理
+export const initAnalysisRequest: IAnalysisRequest = {
+  startDate: '',
+  analysisWord: '',
+  url: '',
+  analysisTiming: [],
+  autoTweet: 0,
+};

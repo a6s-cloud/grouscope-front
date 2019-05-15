@@ -1,6 +1,6 @@
 ![a6s-cloud 構成図](/doc/image/a6s-cloud-icon/facebook_cover_photo_2.png)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/nsuzuki7713/a6s-cloud-front)
 
 # a6s-cloud
@@ -88,8 +88,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/nsuzuki7713" width="100px;" alt="Naoto"/><br /><sub><b>Naoto</b></sub>](https://github.com/nsuzuki7713)<br />[🚧](#maintenance-naoto "Maintenance") | [<img src="https://avatars0.githubusercontent.com/TsutomuNakamura" width="100px;" alt="Tsutomu"/><br /><sub><b>Tsutomu</b></sub>](https://github.com/TsutomuNakamura)<br />[🚧](#maintenance-TsutomuNakamura "Maintenance") | [<img src="https://avatars3.githubusercontent.com/u/42460318?v=4" width="100px;" alt="toki"/><br /><sub><b>toki</b></sub>](https://github.com/tokidrill)<br />[🚧](#maintenance-tokidrill "Maintenance") |[<img src="https://avatars0.githubusercontent.com/minokich" width="100px;" alt="minokich"/><br /><sub><b>minokich</b></sub>](https://github.com/minokich)<br />[🚧](#maintenance-minokich "Maintenance") 
-| :---: | :---: | :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/nsuzuki7713" width="100px;" alt="Naoto"/><br /><sub><b>なおと</b></sub>](https://github.com/nsuzuki7713)<br />[🚧](#maintenance-naoto "Maintenance") | [<img src="https://avatars0.githubusercontent.com/TsutomuNakamura" width="100px;" alt="Tsutomu"/><br /><sub><b>Tsutomu</b></sub>](https://github.com/TsutomuNakamura)<br />[🚧](#maintenance-TsutomuNakamura "Maintenance") | [<img src="https://avatars3.githubusercontent.com/u/42460318?v=4" width="100px;" alt="toki"/><br /><sub><b>toki</b></sub>](https://github.com/tokidrill)<br />[🚧](#maintenance-tokidrill "Maintenance") |[<img src="https://avatars0.githubusercontent.com/minokich" width="100px;" alt="minokich"/><br /><sub><b>minokich</b></sub>](https://github.com/minokich)<br />[🚧](#maintenance-minokich "Maintenance") |[<img src="doc/image/icon/nonato.jpg" width="100px;" alt="のなと"/><br /><sub><b>のなと</b></sub>](https://twitter.com/Nonato_Note)<br />[🎨](#design-のなと "design") 
+| :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

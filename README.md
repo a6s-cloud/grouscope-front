@@ -50,10 +50,7 @@ Repository of batch application : [a6s-cloud-batch](https://github.com/nsuzuki77
 ## DEVELOPMENT POLICY
 
 ## DOCUMENTS
-* Outer Spec
-* Inner Spec
-* Function Design
-* Development Style
+* 環境構築HowTo
 * [DB設計書](https://docs.google.com/spreadsheets/d/1yKhZl0ISlI6fhFIjqpVFvrnn9nDJPN232Z2RQCOOH7Q/edit#gid=0)
 * コンテナ構成図
 * [タスクとgit hub運用フロー](https://a6s-cloud.kibe.la/notes/13)

@@ -9,7 +9,7 @@
     "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "element-ui": "^2.4.5",
     "vue": "^2.5.22",
     "vue-class-component": "^6.0.0",
